@@ -42,7 +42,23 @@
 .about-mf .about-img img {
   margin-left: 10px;
 }
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .about-img img {
+    display: none;
+  }
+}
 
+@media (max-width: 768px) {
+    .about-info, .skill-mf {
+        padding: 20px; /* Add padding for mobile view */
+    }
+}
+
+@media (max-width: 768px) {
+	.col-md-12, .my-div {
+		padding-left: 30px; /* Adds space on mobile view */
+	}
+}
 
 .skill-mf .progress {
   /* background-color: #cde1f8; */
@@ -302,7 +318,7 @@
 
 
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
+							<div class="text my-div">
 								<p class="mb-4">
 									<span class="number" data-number="10">0</span> <span>+</span>
 									<span>&nbsp; Projects completed</span>
